@@ -1,7 +1,7 @@
 defaultNamespace: default
 namespace: default
 helm:
-  repo: https://harbor-core.danbason.dev
+  repo: https://harbor-core.danbason.dev/chartrepo/library
   releaseName: my-test-chart
   chart: "test-chart"
   force: false

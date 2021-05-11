@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Harbor</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="preload" as="style" href="./light-theme.css">
+    <link rel="preload" as="style" href="./dark-theme.css">
+<link rel="stylesheet" href="styles.e21e8a580071167ce47c.css"></head>
+<body>
+    <harbor-app>
+        <div class="spinner spinner-lg app-loading app-loading-fixed">
+            Loading...
+        </div>
+    </harbor-app>
+<script src="runtime.acf0dec4155e77772545.js" defer></script><script src="polyfills-es5.334352d383133cf3b9bc.js" nomodule defer></script><script src="scripts.bd8f7597c29e5618bc28.js" defer></script><script src="main.b5b60fef81a634bb39db.js" defer></script></body>
+
+</html>
