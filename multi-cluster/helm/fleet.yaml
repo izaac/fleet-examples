@@ -2,10 +2,8 @@ namespace: fleet-mc-helm-example
 targetCustomizations:
 - name: dev
   helm:
-    values:
-      testenv: forizaac
     valuesFile:
-      - values/override.yaml
+    - values/override.yaml
   clusterSelector:
     matchLabels:
       env: dev
