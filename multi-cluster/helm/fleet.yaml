@@ -4,7 +4,7 @@ targetCustomizations:
   helm:
     # values:
     #   replication: false
-    valuesFile:
+    valuesFiles:
     - values/override.yaml
   clusterSelector:
     matchLabels:
