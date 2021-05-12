@@ -4,8 +4,8 @@ targetCustomizations:
   helm:
     values:
       testenv: forizaac
-    # valuesFile:
-    #   - values/override.yaml
+    valuesFile:
+      - values/override.yaml
   clusterSelector:
     matchLabels:
       env: dev
