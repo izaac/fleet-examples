@@ -2,8 +2,8 @@ namespace: fleet-mc-helm-example
 targetCustomizations:
 - name: dev
   helm:
-    values:
-      replication: false
+    valuesFile:
+      - values/override.yaml
   clusterSelector:
     matchLabels:
       env: dev
