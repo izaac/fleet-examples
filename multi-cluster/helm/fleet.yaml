@@ -4,6 +4,9 @@ targetCustomizations:
   helm:
     # values:
     #   replication: false
+    values:
+      test1 : cool
+      test2 : nope
     valuesFiles:
     - values/override.yaml
   clusterSelector:
