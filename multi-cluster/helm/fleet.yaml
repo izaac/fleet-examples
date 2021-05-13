@@ -15,8 +15,8 @@ targetCustomizations:
 
 - name: test
   helm:
-    values:
-      replicas: 3
+    valuesFiles:
+      - values/override-test.yaml
   clusterSelector:
     matchLabels:
       env: test
