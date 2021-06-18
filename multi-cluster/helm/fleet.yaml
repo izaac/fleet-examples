@@ -5,9 +5,9 @@ targetCustomizations:
     values:
       replication: false
     valuesFrom:
-      secretKeyRef:
-        name: secret-values
-        key: values.yaml
+      - secretKeyRef:
+          name: secret-values
+          key: values.yaml
   clusterSelector:
     matchLabels:
       env: dev
@@ -17,9 +17,9 @@ targetCustomizations:
     values:
       replicas: 3
     valuesFrom:
-      secretKeyRef:
-        name: secret-values
-        key: values.yaml
+      - secretKeyRef:
+          name: secret-values
+          key: values.yaml
   clusterSelector:
     matchLabels:
       env: test
@@ -30,9 +30,9 @@ targetCustomizations:
       serviceType: LoadBalancer
       replicas: 3
     valuesFrom:
-      secretKeyRef:
-        name: secret-values
-        key: values.yaml
+      - secretKeyRef:
+          name: secret-values
+          key: values.yaml
   clusterSelector:
     matchLabels:
       env: prod
