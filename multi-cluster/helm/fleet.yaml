@@ -5,10 +5,10 @@ targetCustomizations:
     values:
       replication: false
     valuesFrom:
-      - secretKeyRef:
-          name: secret-values
-          namespace: fleet-mc-helm-example
-          key: values.yaml
+    - secretKeyRef:
+        name: secret-values
+        namespace: fleet-mc-helm-example
+        key: values.yaml
   clusterSelector:
     matchLabels:
       env: dev
@@ -16,10 +16,10 @@ targetCustomizations:
 - name: test
   helm:
     valuesFrom:
-      - configMapKeyRef:
-          name: config-values
-          namespace: fleet-mc-helm-example
-          key: values.yaml
+    - configMapKeyRef:
+        name: config-values
+        namespace: fleet-mc-helm-example
+        key: values.yaml
   clusterSelector:
     matchLabels:
       env: test
