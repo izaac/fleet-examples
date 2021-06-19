@@ -14,8 +14,6 @@ targetCustomizations:
 
 - name: test
   helm:
-    values:
-      replicas: 2
     valuesFrom:
     - configMapKeyRef:
         name: config-values
