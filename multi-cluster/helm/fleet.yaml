@@ -17,8 +17,8 @@ targetCustomizations:
     values:
       replicas: 3
     valuesFrom:
-    - secretKeyRef:
-        name: secret-values
+    - configMapKeyRef:
+        name: config-values
         key: values.yaml
   clusterSelector:
     matchLabels:
