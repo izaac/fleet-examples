@@ -22,6 +22,21 @@ targetCustomizations:
         key: values.yaml
   clusterSelector:
     matchLabels:
+      env: test2
+
+- name: test
+  helm:
+    valuesFrom:
+    - configMapKeyRef:
+        name: config-values
+        namespace: fleet-mc-helm-example
+        key: values.yaml
+      secretKeyRef:
+        name: secret-values
+        namespace: fleet-mc-helm-example
+        key: values.yaml
+  clusterSelector:
+    matchLabels:
       env: test
 
 - name: prod
